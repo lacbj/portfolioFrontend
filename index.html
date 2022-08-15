@@ -5,19 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
-
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/382381b436.js" crossorigin="anonymous"></script>
 
     <title>porfolio</title>
 
+  </head>
 
-
- 
-<!-- carrusel -->
 <body  class="container" >
 <main class="container">
+  <!-- carrusel del inicio-->
   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -28,22 +26,22 @@
       <div class="carousel-item active">
         <img src="img/el trabajo-en-equipo.webp" class="d-block w-100" alt="..." height="300px">
         <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
+          <!-- <h5>First slide label</h5> -->
+          <!-- <p>Some representative placeholder content for the first slide.</p> -->
         </div>
       </div>
       <div class="carousel-item">
         <img src="img/fotoblogene2709.png" class="d-block w-100" alt="..." height="300px">
         <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Some representative placeholder content for the second slide.</p>
+          <!-- <h5>Second slide label</h5> -->
+          <!-- <p>Some representative placeholder content for the second slide.</p> -->
         </div>
       </div>
       <div class="carousel-item">
         <img src="img/trabajo-en-equipo.jpeg" class="d-block w-100" alt="..." height="300px">
         <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
+          <!-- <h5>Third slide label</h5> -->
+          <!-- <p>Some representative placeholder content for the third slide.</p> -->
         </div>
       </div>
     </div>
@@ -56,63 +54,196 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-<div class="card mat-card" id="first-card">
-</div></main>
-<br>
-<br>
-<!-- foto personal -->
-
-
-<div id="info-img" class="info-img">
+  <div class="card mat-card" id="first-card">
+  </div>
+  <!-- foto personal -->
   <div id="img">
-
     <article class="foto">
-      <img class="gray-scale" src="img/leo.jpg"
+      <img class="foto-scale" src="img/leo.jpg"
         alt="LeonelCrespo">
     </article>
-    <div class="bnt-edit"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
+    <!-- <div class="bnt-edit"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div> Lapisito-->
   </div>
-  <div id="info-data">
-    <div>
-      <h1>Leonel Crespo</h1>
-      <div id="info-conpany">INFORMATOCO</div>
-      <div id="info-contacts">
-        <span>Buenos Aires ( Argentina)</span>
-        <span><a href="#">Informacion de contacto</a></span>
-
-      </div>
-
-    </div>
-    <ul id="info-detaye">
-      <li><a href="#">
-        <img src="" alt="">
-        <h2>conicet</h2>
-      </a></li>
-      <li><a href="#">
-        <img src="" alt="">
-        <h2>inti</h2>
-      </a></li>
-    </ul>
-  </div>
-
-</div>
-
-
-<!-- proyectos -->
-<main class="container">
-  <div class="bg-light p-5 rounded">
-    <h1>PROYECTOS</h1>
-    <p class="lead">This example is a quick exercise to illustrate how the top-aligned navbar works. As you scroll, this navbar remains in its original position and moves with the rest of the page.</p>
-    <a class="btn btn-lg btn-primary" href="/docs/5.0/components/navbar/" role="button">View navbar docs &raquo;</a>
-  </div>
+  <!-- datos -->
+  <section class="contenedorDatos">
+    <article id="info-data" class="lista">
+      <ul id="info-detaye">
+        <h1>Leonel Crespo</h1>      
+        <div id="info-conpany">Informatica</div>
+        <div id="info-contacts">
+          <span>Buenos Aires ( Argentina)</span>
+          <br>
+          <span><a>Informacion de contacto</a></span>
+          <br>
+        </div>
+        <div class="cajacontacto">
+          <h3><b>REDES SOCIALES</b></h3>
+          <h2>
+            <a class="fa-brands fa-whatsapp"  href="https://wa.me/541136770583" target="_blank"></a>
+            <a class="fa-brands fa-linkedin"  href="https://www.linkedin.com/in/crespoleonel35" target="_blank" ></a>
+            <a class="fa-brands fa-github" href="https://github.com/lacbj?tab=repositories" target="_blank"></a>
+          </h2>
+        </div>
+      </article>
+           <!-- Reloj-->
+      <article> 
+        <section class="reloj_contenedor">    
+          <div class="wrap">
+            <div class="widget">
+              <div class="fecha">
+                <p class="diasemana" id="diasemana"></p>
+                <p class="dia" id="dia"></p>
+                <p>de</p>
+                <p class="mes" id="mes"></p>
+                <p>del</p>
+                <p class="year" id="year"></p>
+            </div>
+            <div class="reloj">
+              <p id="horas" class="horas"></p>
+              <p>:</p>
+              <p id="minutos" class="minutos"></p>
+              <p>:</p>
+              <div class="caja-segundos">
+                <p id="ampm" class="ampm"></p>
+                <p id="segundos" class="segundos"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>  
+      </article>
+      <article>        
+        <img src="img/logo-arg-programa.png" alt="error">             
+        <img src="img/inti.jpg" alt="error"class="logointi">
+      </article>  
+  </section>
 </main>
+    
+    <!-- PROYECTOS REALIZADOS-->
+<section class="bg-light p-5 rounded">
+  <h1 class="titulo" id="proyectos"> PROYECTOS</h1>
+  <br> 
+  <!-- Proyectos varios--> 
+  <div class="contenedor"> 
+      <figure>
+          <img src="img/formularioBoostrap.png" alt="ERROR">
+          <div class="capa">
+            <h3>Diseño Web</h3>
+            <p>
+              Prototipo y maqueto tus diseños estáticos y los convierto en increíbles sitios y aplicaciones <i>web</i>
+              responsivas, óptimas y accesibles.
+              HTML, CSS3, Boostrap, Java Scrip, Java
+              -<i>HTMl</i>.<br>                
+              -<i>Css3</i>.<br>
+              -<i>Boostrap</i>.<br>
+              -<i>JavaScrip</i>.<br>
+              -<i>Java</i><br>
+            </p>
+      </div>
+      </figure>    
+      <figure>
+          <img src="img/AgenciaBoostrap.png" alt="">
+          <div class="capa">
+            <h3>Programación <i>Web</i></h3>
+            <p>
+              Desarrollo sitios y aplicaciones para plataformas <i>Web</i>. Te ayudo a construir tu proyecto de principio a
+              fin:<i>Backend</i>, Data base & <i>Frontend</i>
+              -<i>Boostrap</i>.<br>
+              -<i>Css3</i>.<br>               
+              -<i>Apache NetBeans</i>.<br>
+              -<i>XAMPP</i>.<br>
+              -<i>phpmyadmin</i>.<br>
+              -<i>Sql, MySQL Workbech</i><br>                
+            </p>
+      </div>
+      </figure>    
+      <figure>
+          <img src="img/OradoresCodoaCodoBoostrap.png" alt="">
+          <div class="capa">
+            <h3><i>Web Hosting</i></h3>
+            <p>
+              ¿No cuentas con dominio y hospedaje <i>web</i> para tu proyecto? No te preocupes de esas cosas técnicas me
+              encargo yo.                
+            </p>
+      </div>
+      </figure>   
+      <figure>
+          <img src="img/pc.escritorio1.jpeg" alt="">
+          <div class="capa">
+            <h3>Programador Junior</h3>
+            <p>
+              Mantenimiento y desarrollo de nuevas funcionalidades  para aplicativos web y móvil
+              Utilizando herramientas como:<br>
+              -Java 8.<br>
+              -<i>MySQL</i>.<br>                
+              -<i>POO</i>.<br>
+              -<i>sql</i>.<br>
+              -<i>phpmyadmin, NetBeans</i>. <br>
+              -<i>Git ,github</i><br>
+              -Metodología <i>Scrum</i>
+            </p>
+      </div>
+      </figure>   
+      <figure>
+          <img src="img/pc.escritorio2.jpeg" alt="">
+          <div class="capa">
+            <h3>Programador Junior</h3>
+            <p>
+              Mantenimiento y desarrollo de bases de datos<br>
+              -Java 8.<br>
+              -<i>MySQL</i>.<br>                
+              -<i>POO</i>.<br>
+              -<i>sql</i>.<br>
+              -<i>phpmyadmin</i>.<br>
+              -<i>Git github</i><br>
+              -Metodología <i>Scrum</i>
+            </p>
+      </div>
+      </figure>    
+      <figure>
+          <img src="img/images (1).jpg" alt="">
+          <div class="capa">
+            <h3>Programador Junior</h3>
+            <p>
+              Mantenimiento y desarrollo de nuevas funcionalidades  para aplicativos web y móvil 
+            Utilizando herramientas como:<br>
+              -Java 8.<br>
+              -<i>MySQL</i>.<br>                
+              -<i>POO</i>.<br>
+              -<i>Angular (Curso en Proceso)</i>.<br>
+              -<i> Node JS(Curso en Proceso)</i> <br>                
+            </p>
+      </div>
+      </figure>      
+  </div>  
+</section> 
 <!-- experiencia -->
+</main>
 <br>
 <br>
 <main class="container">
   <div class="bg-light p-5 rounded">
     <h1>EXPERIENCIA</h1>
-    <p class="lead">This example is a quick exercise to illustrate how the top-aligned navbar works. As you scroll, this navbar remains in its original position and moves with the rest of the page.</p>
+    
+    <h5><i>Desarrollador FullStack JUNIOR</i></h5>
+  </aside>
+  <p>Profesional con 1 años de experiencia, con conocimientos que abarcan las áreas del
+     desarrollo frontend y el backend, enfocado al manejo de tecnologías que se utilizan
+      para crear un sitio web y API desde cero. Conocimientos integrales desde metodologías,
+       lenguajes de programación, y herramientas para cada etapa de desarrollo.</p>
+  <p>Disfruto llevar a cabo la maquetación y el desarrollo frontend donde puedo crear la 
+    interfaz, a través de código HTML5, procurando que sea agradable visualmente y de facil
+     manejo para el usuario, valiendome de herramientas tecnologicas como CCS, Boostrap,
+     JavaScrip o java. Vigilandio que el tiempo de carga de la página web sea corto y se
+     pueda abrir en múltiples navegadores.</p>
+  <p>Igualmente me parece interesante realizar la infraestructura del programa de modo que
+     el usuario realice las operaciones que desee en el sitio web o aplicación y tenga los
+     resultados que busca. Pare esto me valgo de tecnologias como SQL, MySQL, Java, Apache 
+     NetBeans,XAMPP, phpmyadmin.
+  </p>
+  <P>Cuento con cursos adicionales como Organizador de Computadores e instalación de Softwares
+    y técnologias informaticas además electrónica en telecomunicaciones.
+  </P>    
    
   </div>
 </main>
@@ -122,8 +253,23 @@
 <main class="container">
   <div class="bg-light p-5 rounded">
     <h1>ESTUDIOS</h1>
-    <p class="lead">This example is a quick exercise to illustrate how the top-aligned navbar works. As you scroll, this navbar remains in its original position and moves with the rest of the page.</p>
-    
+    <p class="lead">
+      <P>• Bachiller Mención Ciencias: [ Julio 
+        2005 ] U.E “Maracaibo II” Artigas, Caracas.</P> 
+      <P> • Curso de Codo a Codo 4.0:
+        Programador Full Stack Java, Herramientas 
+        tecnológicas: HTML, CSS, Bootstrap, GIT, 
+        JavaScrip, SCRUM, SQL, Java, XAMPP,phpmyadmin. </P>
+      <P>• Centro de Formación profesional nº 
+        22 idetel: (2021-mar a jun-2021)
+        Electricidad y electrónica básica en 
+        telecomunicaciones</P> 
+      <P>• Centro de Formación Profesional N° 
+        10 Raúl Scalabrini Ortiz. Organizador del 
+        Computador, Tecnología de la información 
+        Organizador del Computador, Tecnología 
+        de la informática. (Sep-2021 - dic. 2021)</P>      
+    </p>    
   </div>
 </main>
 
@@ -132,7 +278,8 @@
 
 
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="codigo.js">
+    <script src="codigo.js"></script>
 </body>
 </html>
